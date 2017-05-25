@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="">
+    <title>小怪兽</title>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+	<body>
+		
+		<div id="loading">
+			<div class="loading_center">
+				<div class="loading_bar"></div>
+				<div class="progress">0%</div>
+			</div>
+		</div>
+		<div class="music">
+			<img src="img/publish/music.png">
+			<img src="img/publish/music_close.png" class="hide">
+		</div>
+		<div id="page1">
+			<img src="img/page1/word_01.png" class="page1_1">
+			<img src="img/page1/word_02.png" class="page1_2">
+			<img src="img/page1/word_03.png" class="page1_3">
+			<img src="img/page1/word_04.png" class="page1_4">
+			<div class="foot">
+				<img src="img/page1/foot1.png" class="foot1">
+				<img src="img/page1/foot2.png" class="foot2">
+			</div>
+			<div class="love"></div>
+		</div>
+		
+		<div id="page2">
+			<div class="create_btn">
+				<img src="img/page2/btn.png" class="btn">
+			</div>
+			<img src="img/page2/statement.png" class="statement hide">
+			<img src="img/page2/statement_btn.png" class="statement_btn">
+			<img src="img/page2/word_01.png" class="word word_01">
+			<img src="img/page2/word_02.png" class="word word_02">
+			<img src="img/page2/word_03.png" class="word word_03">
+			<img src="img/page2/word_04.png" class="word word_04">
+			<img src="img/page2/word_05.png" class="word word_05">
+		</div>
+		
+		<div id="page3">
+			<img src="img/page3/img1.png" class="img1">
+			<img src="img/page3/img2.png" class="img2">
+			<img src="img/page3/img3.png" class="img3">
+			<img src="img/page3/img4.png" class="img4">
+			<img src="img/page3/page3_word.png" class="page3_word">
+		</div>
+		
+		<div id="page4">
+			<div class="index_1 hide">
+				<img src="img/page4/make1.png" class="make1">
+				<img src="img/page4/make1_btn.png" class="make1_btn">
+			</div>
+			<div class="index_2 hide">
+				<img src="img/page4/make2.png" class="make2">
+				<img src="img/page4/make2_btn.png" class="make2_btn">
+			</div>
+			<div class="index_3 hide">
+				<img src="img/page4/make3.png" class="make3">
+				<img src="img/page4/make3_btn.png" class="make3_btn">
+			</div>
+			<div class="index_4 hide">
+				<img src="img/page4/make4.png" class="make4">
+				<img src="img/page4/make2_btn.png" class="make4_btn">
+			</div>
+		</div>
+		
+		<div id="page5">
+			<div class="make">
+				<img src="img/page5/make_btn.png">
+				<img src="img/page5/make.png">
+			</div>
+			<div class="back">
+				<img src="img/page5/back_btn.png">
+				<img src="img/page5/back.png">
+			</div>
+			<div class="keep">
+				<img src="img/page5/keep_btn.png">
+				<img src="img/page5/keep.png">
+			</div>
+			<div class="bulid">
+				<img src="img/page5/bulid_btn.png">
+				<img src="img/page5/bulid.png">
+			</div>
+			<div class="share">
+				<img src="img/page5/share_btn.png">
+				<img src="img/page5/share.png">
+			</div>
+			<div class="code">
+				<img src="img/page5/code.jpg">
+			</div>
+			<div class="enter_bg">
+				<!--<img src="img/page5/enter_bg.png">-->
+				<textarea placeholder="编辑文字，分享你的精彩瞬间！" name="content" id="content" maxlength="48"></textarea>
+			</div>
+			 
+			<!--<input type="text" name="content" id="content" value="" />-->
+		</div>
+
+		
+		<div id="landscape"></div>
+		<audio id="sound" loop="loop" src="media/music.mp3" style="opacity: 0;width:0;height: 0;visibility: hidden;"></audio>
+	</body>
+	<script>
+		var sound=document.getElementById('sound');
+		document.addEventListener("WeixinJSBridgeReady", function() {
+			sound.load();			
+		}, false);
+		
+		var version = "?201704291421"; //版本号
+		var url = 'http://c.3viso.cn/posterH5/'; //此处放正式地址
+		var prefix = ''; //此处放cdn
+	</script>
+	<script src="js/fastclick.js"></script>
+	<script src="js/zepto.js"></script>
+	<script src="js/main.js"></script>
+</html>
